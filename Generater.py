@@ -16,7 +16,7 @@ def culculate_op(data: dict):
     with codecs.open(f"{cwd}/Assets/duplicate.json", "r", encoding="utf-8") as f:
         dup = orjson.loads(f.read())
     with codecs.open(f"{cwd}/Assets/subopM.json", "r", encoding="utf-8") as f:
-        mapping = orjson.load(f.read())
+        mapping = orjson.loads(f.read())
 
     res = [None, None, None, None]
     keymap = list(map(str, data.keys()))
@@ -24,6 +24,14 @@ def culculate_op(data: dict):
     is_dup = []
     # 重複するものがあるか判定
     for ctg, state in data.items():
+        if ctg == "会心ダメージパーセンテージ":
+            ctg = "会心ダメージ"
+        elif ctg == "元素チャージ効率パーセンテージ":
+            ctg = "元素チャージ効率"
+        elif ctg == "会心率パーセンテージ":
+            ctg = "会心率"
+        elif ctg == "会心ダメージパーセンテージ":
+            ctg = "会心ダメージ"
         dup_value = dup[ctg]["ov"]
         if str(state) in dup_value:
             is_dup.append((ctg, state))
@@ -47,6 +55,14 @@ def culculate_op(data: dict):
         single_state = {c: s for c, s in data.items() if c not in dup_ctg}
         for ctg, state in single_state.items():
             idx = keymap.index(ctg)
+            if ctg == "会心ダメージパーセンテージ":
+                ctg = "会心ダメージ"
+            elif ctg == "元素チャージ効率パーセンテージ":
+                ctg = "元素チャージ効率"
+            elif ctg == "会心率パーセンテージ":
+                ctg = "会心率"
+            elif ctg == "会心ダメージパーセンテージ":
+                ctg = "会心ダメージ"
             res[idx] = mapping[ctg][str(state)]
             counter_flag += len(mapping[ctg][str(state)])
 
@@ -176,7 +192,7 @@ def read_json(path):
     return data
 
 
-def generation(data):
+def generation(data, uid: str):
     # config
     element = data.get("元素")
 
@@ -613,6 +629,14 @@ def generation(data):
                     optionmap.get(SubOP) or SubOP,
                     font=config_font(25),
                 )
+            if SubOP == "会心ダメージパーセンテージ":
+                SubOP = "会心ダメージ"
+            elif SubOP == "元素チャージ効率パーセンテージ":
+                SubOP = "元素チャージ効率"
+            elif SubOP == "会心率パーセンテージ":
+                SubOP = "会心率"
+            elif SubOP == "会心ダメージパーセンテージ":
+                SubOP = "会心ダメージ"
             SubIcon = Image.open(f"{cwd}/emotes/{SubOP}.png").resize((30, 30))
             SubMask = SubIcon.copy()
             Base.paste(SubIcon, (44 + 373 * i, 811 + 50 * a), mask=SubMask)
@@ -639,7 +663,8 @@ def generation(data):
                         font=config_font(25),
                         fill=(255, 255, 255),
                     )
-
+# ,
+#    "db_ttl": "2024-03-10T05:27:48.960437+00:00"
             if details["Level"] == 20 and details["rarelity"] == 5:
                 nobi = D.textlength("+".join(map(str, psb[a])), font=config_font(11))
                 D.text(
@@ -695,8 +720,8 @@ def generation(data):
             D.rounded_rectangle((1818, 263, 1862, 288), 1, "black")
             D.text((1831, 265), str(q), font=config_font(19))
 
-    Base.show()
-    Base.save(f"{cwd}/Tests/Image.png")
+    # Base.show()
+    Base.save(f"{cwd}/temp/{uid}.png")
 
     return pil_to_base64(Base, format="png")
 
@@ -709,4 +734,4 @@ def pil_to_base64(img, format="jpeg"):
     return img_str
 
 
-generation(read_json("data.json"))
+# generation(read_json("./ArtifacterImageGen/temp/json/888576866_ATTACK_フリーナ.json"), "888576866")

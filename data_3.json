@@ -1,0 +1,187 @@
+{
+    "uid": 888576866,
+    "Character": {
+      "Name": "ナヴィア",
+      "Const": 0,
+      "Level": 87,
+      "Love": 10,
+      "Status": {
+        "HP": 16089,
+        "攻撃力": 2888,
+        "防御力": 889,
+        "元素熟知": 142,
+        "会心率": 25.2,
+        "会心ダメージ": 107.8,
+        "元素チャージ効率": 144,
+        "岩元素ダメージ": 47
+      },
+      "Talent": {
+        "通常": 7,
+        "スキル": 7,
+        "爆発": 4
+      },
+      "Base": {
+        "HP": 12382,
+        "攻撃力": 876,
+        "防御力": 776
+      }
+    },
+    "Weapon": {
+      "name": "狼の末路",
+      "Level": 80,
+      "totu": 1,
+      "rarelity": 5,
+      "BaseATK": 532,
+      "Sub": {
+        "name": "攻撃力",
+        "value": 0
+      }
+    },
+    "Score": {
+      "State": "攻撃",
+      "total": 68.6,
+      "flower": 22.7,
+      "wing": 7.8,
+      "clock": 18.7,
+      "cup": 0,
+      "crown": 19.4
+    },
+    "Artifacts": {
+      "flower": {
+        "type": "残響の森で囁かれる夜話",
+        "Level": 20,
+        "rarelity": 5,
+        "main": {
+          "option": "HP",
+          "value": 4780
+        },
+        "sub": [
+          {
+            "option": "攻撃パーセンテージ",
+            "value": 8.7
+          },
+          {
+            "option": "会心率",
+            "value": 7
+          },
+          {
+            "option": "元素熟知",
+            "value": 70
+          },
+          {
+            "option": "攻撃力",
+            "value": 18
+          }
+        ]
+      },
+      "wing": {
+        "type": "残響の森で囁かれる夜話",
+        "Level": 20,
+        "rarelity": 5,
+        "main": {
+          "option": "攻撃力",
+          "value": 311
+        },
+        "sub": [
+          {
+            "option": "元素熟知",
+            "value": 37
+          },
+          {
+            "option": "元素チャージ効率",
+            "value": 16.2
+          },
+          {
+            "option": "会心率",
+            "value": 3.9
+          },
+          {
+            "option": "HPパーセンテージ",
+            "value": 10.5
+          }
+        ]
+      },
+      "clock": {
+        "type": "残響の森で囁かれる夜話",
+        "Level": 20,
+        "rarelity": 5,
+        "main": {
+          "option": "攻撃パーセンテージ",
+          "value": 47
+        },
+        "sub": [
+          {
+            "option": "HP",
+            "value": 299
+          },
+          {
+            "option": "会心率",
+            "value": 9.3
+          },
+          {
+            "option": "攻撃力",
+            "value": 33
+          },
+          {
+            "option": "元素熟知",
+            "value": 35
+          }
+        ]
+      },
+      "cup": {
+        "type": "在りし日の歌",
+        "Level": 20,
+        "rarelity": 5,
+        "main": {
+          "option": "岩元素ダメージ",
+          "value": 47
+        },
+        "sub": [
+          {
+            "option": "元素チャージ効率",
+            "value": 17.5
+          },
+          {
+            "option": "防御力",
+            "value": 16
+          },
+          {
+            "option": "防御パーセンテージ",
+            "value": 12.4
+          },
+          {
+            "option": "HPパーセンテージ",
+            "value": 8.7
+          }
+        ]
+      },
+      "crown": {
+        "type": "残響の森で囁かれる夜話",
+        "Level": 20,
+        "rarelity": 5,
+        "main": {
+          "option": "攻撃パーセンテージ",
+          "value": 47
+        },
+        "sub": [
+          {
+            "option": "HP",
+            "value": 538
+          },
+          {
+            "option": "元素チャージ効率",
+            "value": 10.4
+          },
+          {
+            "option": "会心ダメージ",
+            "value": 19.4
+          },
+          {
+            "option": "攻撃力",
+            "value": 27
+          }
+        ]
+      }
+    },
+    "元素": "岩"
+  }

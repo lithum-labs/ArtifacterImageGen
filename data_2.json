@@ -1,0 +1,186 @@
+{
+    "uid": 1,
+    "Character": {
+        "Name": "フリーナ",
+        "Const": 0,
+        "Level": 90,
+        "Love": 10,
+        "Status": {
+            "HP": 29850,
+            "攻撃力": 1241,
+            "防御力": 863,
+            "元素熟知": 100,
+            "会心率": 29.6,
+            "会心ダメージ": 163.1,
+            "元素チャージ効率": 146.4
+        },
+        "Talent": {
+            "通常": 3,
+            "スキル": 10,
+            "爆発": 4
+        },
+        "Base": {
+            "HP": 15307,
+            "攻撃力": 693,
+            "防御力": 696
+        }
+    },
+    "Weapon": {
+        "name": "サーンドルの渡し守",
+        "Level": 80,
+        "totu": 1,
+        "rarelity": 4,
+        "BaseATK": 449,
+        "Sub": {
+            "name": "元素チャージ効率",
+            "value": 0
+        }
+    },
+    "Score": {
+        "State": "攻撃",
+        "total": 97.8,
+        "flower": 47.8,
+        "wing": 5.3,
+        "clock": 4.1,
+        "cup": 35.9,
+        "crown": 4.7
+    },
+    "Artifacts": {
+        "flower": {
+            "type": "黄金の劇団",
+            "Level": 20,
+            "rarelity": 5,
+            "main": {
+                "option": "HP",
+                "value": 4780
+            },
+            "sub": [
+                {
+                    "option": "会心ダメージ",
+                    "value": 21.8
+                },
+                {
+                    "option": "元素チャージ効率",
+                    "value": 4.5
+                },
+                {
+                    "option": "攻撃パーセンテージ",
+                    "value": 15.2
+                },
+                {
+                    "option": "会心率",
+                    "value": 5.4
+                }
+            ]
+        },
+        "wing": {
+            "type": "黄金の劇団",
+            "Level": 18,
+            "rarelity": 5,
+            "main": {
+                "option": "攻撃力",
+                "value": 285
+            },
+            "sub": [
+                {
+                    "option": "HPパーセンテージ",
+                    "value": 5.3
+                },
+                {
+                    "option": "攻撃パーセンテージ",
+                    "value": 5.3
+                },
+                {
+                    "option": "元素熟知",
+                    "value": 63
+                },
+                {
+                    "option": "HP",
+                    "value": 807
+                }
+            ]
+        },
+        "clock": {
+            "type": "黄金の劇団",
+            "Level": 20,
+            "rarelity": 5,
+            "main": {
+                "option": "HPパーセンテージ",
+                "value": 47
+            },
+            "sub": [
+                {
+                    "option": "攻撃力",
+                    "value": 33
+                },
+                {
+                    "option": "防御パーセンテージ",
+                    "value": 13.1
+                },
+                {
+                    "option": "HP",
+                    "value": 777
+                },
+                {
+                    "option": "攻撃パーセンテージ",
+                    "value": 4.1
+                }
+            ]
+        },
+        "cup": {
+            "type": "黄金の劇団",
+            "Level": 20,
+            "rarelity": 5,
+            "main": {
+                "option": "HPパーセンテージ",
+                "value": 47
+            },
+            "sub": [
+                {
+                    "option": "防御力",
+                    "value": 39
+                },
+                {
+                    "option": "HP",
+                    "value": 209
+                },
+                {
+                    "option": "攻撃パーセンテージ",
+                    "value": 4.1
+                },
+                {
+                    "option": "会心ダメージ",
+                    "value": 31.9
+                }
+            ]
+        },
+        "crown": {
+            "type": "在りし日の歌",
+            "Level": 19,
+            "rarelity": 5,
+            "main": {
+                "option": "会心ダメージ",
+                "value": 60
+            },
+            "sub": [
+                {
+                    "option": "防御力",
+                    "value": 37
+                },
+                {
+                    "option": "HPパーセンテージ",
+                    "value": 9.9
+                },
+                {
+                    "option": "元素熟知",
+                    "value": 37
+                },
+                {
+                    "option": "攻撃パーセンテージ",
+                    "value": 4.7
+                }
+            ]
+        }
+    },
+    "元素": "水"
+}
